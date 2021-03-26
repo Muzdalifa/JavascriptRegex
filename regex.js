@@ -67,9 +67,27 @@ console.log(y.match(myRegex)) //this return array of all matched character
 
 function matchlettersZeroOrMore(){
 let y = document.getElementById("p8a").innerHTML
-let myRegex = /o*/gi  
+let myRegex = /o*/gi   //* means zero or more occurence of any character
 document.getElementById("p8b").innerHTML = `Matched string : ${myRegex}`;
 document.getElementById("p8c").innerHTML = y.match(myRegex);
 console.log(y.match(myRegex)) //this return array of all matched character
 
+}
+
+//gready match returns the highest possible solution as possible.
+function greadyMatch(){
+let y = document.getElementById("p9a").innerHTML
+let myRegex = /<.*>/gi // . means amcth any character, ie numbers, letters, symbol   
+document.getElementById("p9b").innerHTML = `Matched string : ${myRegex}`;
+document.getElementById("p9c").innerHTML = y.match(myRegex);
+console.log(y.match(myRegex)) //this return array of all matched character
+
+}
+
+// lazy match find the first match it found
+function lazyMatch(){
+ let y = document.getElementById("p10a").innerHTML
+let myRegex = /<.*?>/gi // ? means lazy  
+document.getElementById("p10b").innerHTML = `Matched string : ${myRegex}`;
+document.getElementById("p10c").innerHTML = y.match(myRegex);
 }
