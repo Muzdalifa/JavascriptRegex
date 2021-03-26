@@ -91,3 +91,10 @@ let myRegex = /<.*?>/gi // ? means lazy
 document.getElementById("p10b").innerHTML = `Matched string : ${myRegex}`;
 document.getElementById("p10c").innerHTML = y.match(myRegex);
 }
+
+function findCriminalDenotedByC(){
+let y = document.getElementById("p11a").innerHTML
+let myRegex = /C+/gi // ? means lazy  
+document.getElementById("p11b").innerHTML = `Matched string : ${myRegex}`;
+document.getElementById("p11c").innerHTML = y.match(myRegex);
+}
