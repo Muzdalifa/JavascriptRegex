@@ -98,3 +98,10 @@ let myRegex = /C+/gi // ? means lazy
 document.getElementById("p11b").innerHTML = `Matched string : ${myRegex}`;
 document.getElementById("p11c").innerHTML = y.match(myRegex);
 }
+
+function matchBegginingOfString(){
+let y = document.getElementById("p12a").innerHTML
+let myRegex = /^Cal/gi // ? means lazy  
+document.getElementById("p12b").innerHTML = `Matched string : ${myRegex}`;
+document.getElementById("p12c").innerHTML = y.match(myRegex);
+}
