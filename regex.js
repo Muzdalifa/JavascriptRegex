@@ -115,3 +115,12 @@ let myRegex = /racing$/gi
 document.getElementById("p13b").innerHTML = `Matched string : ${myRegex}`;
 document.getElementById("p13c").innerHTML = y.match(myRegex); 
 }
+
+//we use shortcut \w to match all upper,lower characters, numbers, underscore
+function matchAllLettersNumbersUnderscore(){
+ let y = document.getElementById("p14a").innerHTML
+let myRegex = /\w/gi  
+// let myRegex = /g$/gi  //if just last charater 
+document.getElementById("p14b").innerHTML = `Matched string : ${myRegex}`;
+document.getElementById("p14c").innerHTML = y.match(myRegex); 
+}
