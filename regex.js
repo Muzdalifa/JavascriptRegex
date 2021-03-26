@@ -19,4 +19,14 @@ document.getElementById("p2d").innerHTML = y.match(myRegex);
 console.log(y.match(myRegex)) //this return array of all matched string
 
 }
+
+function matchCharacter(){
+ let y = document.getElementById("p3a").innerHTML
+let myRegex = /b[aeiou]/gi // return ba or be or bi or bo or bu,
+//let myRegex = /b[aeiou]g/gi // the first letter must be b and the last must be g, in between can have vowel a,e,i,o,u
+document.getElementById("p3b").innerHTML = `Matched string : ${myRegex}`;
+document.getElementById("p3c").innerHTML = y.match(myRegex);
+console.log(y.match(myRegex)) //this return array of all matched string
+ 
+}
  
