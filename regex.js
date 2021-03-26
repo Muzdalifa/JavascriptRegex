@@ -29,4 +29,13 @@ document.getElementById("p3c").innerHTML = y.match(myRegex);
 console.log(y.match(myRegex)) //this return array of all matched string
  
 }
+
+function matchAtoZ(){
+ let y = document.getElementById("p4a").innerHTML
+let myRegex = /[a-z]/gi // return ba or be or bi or bo or bu,
+//let myRegex = /b[aeiou]g/gi // the first letter must be b and the last must be g, in between can have vowel a,e,i,o,u
+document.getElementById("p4b").innerHTML = `Matched string : ${myRegex}`;
+document.getElementById("p4c").innerHTML = y.match(myRegex);
+console.log(y.match(myRegex)) //this return array of all matched string
  
+}
