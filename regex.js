@@ -94,14 +94,24 @@ document.getElementById("p10c").innerHTML = y.match(myRegex);
 
 function findCriminalDenotedByC(){
 let y = document.getElementById("p11a").innerHTML
-let myRegex = /C+/gi // ? means lazy  
+let myRegex = /C+/gi 
 document.getElementById("p11b").innerHTML = `Matched string : ${myRegex}`;
 document.getElementById("p11c").innerHTML = y.match(myRegex);
 }
 
+//we use ^ to match the start of string
 function matchBegginingOfString(){
 let y = document.getElementById("p12a").innerHTML
-let myRegex = /^Cal/gi // ? means lazy  
+let myRegex = /^Cal/gi   // if the string is written as this will not be matched: Ricky and  Cal  both like racing
 document.getElementById("p12b").innerHTML = `Matched string : ${myRegex}`;
 document.getElementById("p12c").innerHTML = y.match(myRegex);
+}
+
+//we use $ to match the end of string
+function matchEndingOfString(){
+ let y = document.getElementById("p13a").innerHTML
+let myRegex = /racing$/gi  
+// let myRegex = /g$/gi  //if just last charater 
+document.getElementById("p13b").innerHTML = `Matched string : ${myRegex}`;
+document.getElementById("p13c").innerHTML = y.match(myRegex); 
 }
