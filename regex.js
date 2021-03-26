@@ -59,8 +59,17 @@ console.log(y.match(myRegex)) //this return array of all matched character
 
 function matchLettersMoreThanOnceOccurence(){
 let y = document.getElementById("p7a").innerHTML
-let myRegex = /s+/gi //match all except leteers and numbers 
+let myRegex = /s+/gi 
 document.getElementById("p7b").innerHTML = `Matched string : ${myRegex}`;
 document.getElementById("p7c").innerHTML = y.match(myRegex);
 console.log(y.match(myRegex)) //this return array of all matched character
+}
+
+function matchlettersZeroOrMore(){
+let y = document.getElementById("p8a").innerHTML
+let myRegex = /o*/gi  
+document.getElementById("p8b").innerHTML = `Matched string : ${myRegex}`;
+document.getElementById("p8c").innerHTML = y.match(myRegex);
+console.log(y.match(myRegex)) //this return array of all matched character
+
 }
