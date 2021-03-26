@@ -47,3 +47,12 @@ document.getElementById("p5c").innerHTML = y.match(myRegex);
 console.log(y.match(myRegex)) //this return array of all matched character
  
 }
+
+function matchEverythingExceptNumbersAndVowels(){
+  let y = document.getElementById("p6a").innerHTML
+let myRegex = /[^0-9aeiou]/gi //match all except leteers and numbers 
+document.getElementById("p6b").innerHTML = `Matched string : ${myRegex}`;
+document.getElementById("p6c").innerHTML = y.match(myRegex);
+console.log(y.match(myRegex)) //this return array of all matched character
+ 
+}
